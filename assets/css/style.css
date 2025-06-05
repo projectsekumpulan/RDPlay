@@ -898,4 +898,84 @@ body.dark-mode .details-container {
     .project-gallery img:hover {
         transform: scale(1.05);
     }
-    
+    /* Container layout */
+.experience-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Individual image box */
+.details-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image styling */
+.project-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.02);
+}
+
+/* Modal overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal image content */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+
+  .close {
+    right: 20px;
+    font-size: 30px;
+  }
+}
