@@ -232,7 +232,7 @@ section {
 .btn {
     font-weight: 600;
     transition: all 300ms ease;
-    padding: 5rem;
+    padding: 1rem;
     width: 20rem;
     border-radius: 2rem;
 }
