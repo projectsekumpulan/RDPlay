@@ -231,23 +231,26 @@ section {
 
 .btn {
     display: flex;
-    align-items: center;
-    gap: 10px; /* space between icon and text */
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 6px;
-    background-color: #007BFF; /* or your preferred color */
-    color: white;
-    text-decoration: none;
-}
-
-.btn-icon {
-    width: 24px;
+    align-items: center;      
+    justify-content: center;  
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.75rem 1rem;   
+    height: 80px;      
+    width: 15rem;
+    gap: 1rem;              
+    border-radius: 2rem;
+    text-align: center;
+  }
+  
+  
+  .btn svg,
+  .btn > div {
+    flex-shrink: 0;
+    width: 24px;   
     height: 24px;
-}
-
+  }
+  
 
 .btn-color-1,
 .btn-color-2 {
@@ -773,42 +776,14 @@ body.dark-mode .details-container {
     mask-size: 100% 100%;
   }
 
-        .hugeicons--instagram {
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' color='%23000'%3E%3Cpath d='M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12'/%3E%3Cpath d='M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01'/%3E%3C/g%3E%3C/svg%3E");
-        background-color: rgb(255, 255, 255);
-        -webkit-mask-image: var(--svg);
-        mask-image: var(--svg);
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-size: 100% 100%;
-        mask-size: 100% 100%;
-    }
-
-        .lets-icons--e-mail-light {
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000'%3E%3Cpath stroke-linecap='round' d='M21 12a9 9 0 1 0-6.67 8.693'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath stroke-linecap='round' d='M16 9v4.5a2.5 2.5 0 0 0 2.5 2.5v0a2.5 2.5 0 0 0 2.5-2.5V12'/%3E%3C/g%3E%3C/svg%3E");
-        background-color: rgb(255, 255, 255);
-        -webkit-mask-image: var(--svg);
-        mask-image: var(--svg);
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-size: 100% 100%;
-        mask-size: 100% 100%;
-    }
 
     .wa {
         fill: white;
         stroke: white;
-        stroke-width: 1.5;
         transition: transform 0.3s ease, filter 0.3s ease;
         background-color: transparent;
         border-radius: 50%;
-        padding: 6px;
+
       }
       
       a:hover .wa {
@@ -820,7 +795,7 @@ body.dark-mode .details-container {
         .wa {
           fill: white;
           stroke: white;
-          stroke-width: 1.5;
+
         }
       }
       
@@ -910,84 +885,4 @@ body.dark-mode .details-container {
     .project-gallery img:hover {
         transform: scale(1.05);
     }
-    /* Container layout */
-.experience-details-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-/* Individual image box */
-.details-container {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Image styling */
-.project-img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: transform 0.2s ease;
-}
-
-.project-img:hover {
-  transform: scale(1.02);
-}
-
-/* Modal overlay */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-/* Modal image content */
-.modal-content {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 80vh;
-  border-radius: 12px;
-}
-
-/* Close button */
-.close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.close:hover {
-  color: #ccc;
-}
-
-/* Responsive tweaks */
-@media screen and (max-width: 768px) {
-  .modal-content {
-    max-width: 95%;
-    max-height: 70vh;
-  }
-
-  .close {
-    right: 20px;
-    font-size: 30px;
-  }
-}
+    
