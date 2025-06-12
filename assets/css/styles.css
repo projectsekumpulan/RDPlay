@@ -63,27 +63,33 @@
         margin-top: 0;
     }
 }
-    #contact,
-        footer{
-            height: 40vh;
-            background-color: #333;
-        }
-        #profile {
-            height: 83vh;
-            margin-bottom: 0;
-        }
-        .profl{
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        article{
-            font-size: 1rem;
-        }
-        footer nav{
-            height: fit-content;
-            margin-bottom: 2rem;
-        }
+    footer {
+      height: auto; /* or a specific value like 20vh if you want fixed */
+      background-color: #222;
+      padding: 2rem 1rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    footer nav {
+      height: fit-content;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    footer .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    
+    footer .nav-links li a:hover {
+      text-decoration: underline;
+    }
 
 @media screen and (max-width:600px) {
     #contact,
