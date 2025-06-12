@@ -210,4 +210,48 @@
         text-align: justify;
     }
 }
-    
+    /* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Lists */
+ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
