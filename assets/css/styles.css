@@ -63,6 +63,27 @@
         margin-top: 0;
     }
 }
+    #contact,
+        footer{
+            height: 40vh;
+            background-color: #333;
+        }
+        #profile {
+            height: 83vh;
+            margin-bottom: 0;
+        }
+        .profl{
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        article{
+            font-size: 1rem;
+        }
+        footer nav{
+            height: fit-content;
+            margin-bottom: 2rem;
+        }
 
 @media screen and (max-width:600px) {
     #contact,
