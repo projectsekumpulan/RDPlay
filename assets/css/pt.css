@@ -1,0 +1,80 @@
+/* Base reset and layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container for content */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+/* Page heading */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+/* Section headings */
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Paragraph text */
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+  }
+}
